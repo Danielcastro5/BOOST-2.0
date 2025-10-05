@@ -50,6 +50,7 @@
 			this.panel1 = new System.Windows.Forms.Panel();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.menuStrip1.SuspendLayout();
+			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// button1
@@ -58,10 +59,9 @@
 			this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(71)))));
 			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.button1.ForeColor = System.Drawing.Color.White;
-			this.button1.Location = new System.Drawing.Point(717, 0);
-			this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.button1.Location = new System.Drawing.Point(476, 0);
 			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(43, 40);
+			this.button1.Size = new System.Drawing.Size(29, 26);
 			this.button1.TabIndex = 50;
 			this.button1.Text = "X";
 			this.button1.UseVisualStyleBackColor = false;
@@ -72,10 +72,9 @@
 			this.label6.AutoSize = true;
 			this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
 			this.label6.ForeColor = System.Drawing.Color.Black;
-			this.label6.Location = new System.Drawing.Point(165, 480);
-			this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label6.Location = new System.Drawing.Point(110, 312);
 			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(432, 20);
+			this.label6.Size = new System.Drawing.Size(289, 13);
 			this.label6.TabIndex = 49;
 			this.label6.Text = "_______________________________________________";
 			// 
@@ -85,10 +84,9 @@
 			this.txtrpass2.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.txtrpass2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtrpass2.ForeColor = System.Drawing.Color.Black;
-			this.txtrpass2.Location = new System.Drawing.Point(170, 454);
-			this.txtrpass2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.txtrpass2.Location = new System.Drawing.Point(113, 295);
 			this.txtrpass2.Name = "txtrpass2";
-			this.txtrpass2.Size = new System.Drawing.Size(429, 28);
+			this.txtrpass2.Size = new System.Drawing.Size(286, 19);
 			this.txtrpass2.TabIndex = 48;
 			this.txtrpass2.Text = "CONFIRMAR CONTRASEÑA";
 			this.txtrpass2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -99,10 +97,9 @@
 			// 
 			this.label5.AutoSize = true;
 			this.label5.ForeColor = System.Drawing.Color.Black;
-			this.label5.Location = new System.Drawing.Point(165, 385);
-			this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label5.Location = new System.Drawing.Point(110, 250);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(432, 20);
+			this.label5.Size = new System.Drawing.Size(289, 13);
 			this.label5.TabIndex = 47;
 			this.label5.Text = "_______________________________________________";
 			// 
@@ -110,10 +107,9 @@
 			// 
 			this.label4.AutoSize = true;
 			this.label4.ForeColor = System.Drawing.Color.Black;
-			this.label4.Location = new System.Drawing.Point(165, 280);
-			this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label4.Location = new System.Drawing.Point(110, 182);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(432, 20);
+			this.label4.Size = new System.Drawing.Size(289, 13);
 			this.label4.TabIndex = 46;
 			this.label4.Text = "_______________________________________________";
 			// 
@@ -123,10 +119,9 @@
 			this.txtrpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.txtrpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtrpass.ForeColor = System.Drawing.Color.Black;
-			this.txtrpass.Location = new System.Drawing.Point(170, 357);
-			this.txtrpass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.txtrpass.Location = new System.Drawing.Point(113, 232);
 			this.txtrpass.Name = "txtrpass";
-			this.txtrpass.Size = new System.Drawing.Size(429, 28);
+			this.txtrpass.Size = new System.Drawing.Size(286, 19);
 			this.txtrpass.TabIndex = 44;
 			this.txtrpass.Text = "CONTRASEÑA";
 			this.txtrpass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -139,10 +134,9 @@
 			this.txtruser.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.txtruser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtruser.ForeColor = System.Drawing.Color.Black;
-			this.txtruser.Location = new System.Drawing.Point(170, 246);
-			this.txtruser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.txtruser.Location = new System.Drawing.Point(113, 160);
 			this.txtruser.Name = "txtruser";
-			this.txtruser.Size = new System.Drawing.Size(429, 28);
+			this.txtruser.Size = new System.Drawing.Size(286, 19);
 			this.txtruser.TabIndex = 43;
 			this.txtruser.Text = "USUARIO";
 			this.txtruser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -154,10 +148,9 @@
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Arial Black", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label2.ForeColor = System.Drawing.Color.Black;
-			this.label2.Location = new System.Drawing.Point(250, 43);
-			this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label2.Location = new System.Drawing.Point(167, 28);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(295, 59);
+			this.label2.Size = new System.Drawing.Size(195, 40);
 			this.label2.TabIndex = 41;
 			this.label2.Text = "Registrarse";
 			// 
@@ -168,11 +161,10 @@
 			this.txtcorreo.Cursor = System.Windows.Forms.Cursors.IBeam;
 			this.txtcorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtcorreo.ForeColor = System.Drawing.Color.Black;
-			this.txtcorreo.Location = new System.Drawing.Point(170, 149);
-			this.txtcorreo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.txtcorreo.Location = new System.Drawing.Point(113, 97);
 			this.txtcorreo.Name = "txtcorreo";
 			this.txtcorreo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-			this.txtcorreo.Size = new System.Drawing.Size(429, 28);
+			this.txtcorreo.Size = new System.Drawing.Size(286, 19);
 			this.txtcorreo.TabIndex = 38;
 			this.txtcorreo.Text = "CORREO";
 			this.txtcorreo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -183,10 +175,9 @@
 			// 
 			this.label1.AutoSize = true;
 			this.label1.ForeColor = System.Drawing.Color.Black;
-			this.label1.Location = new System.Drawing.Point(290, 674);
-			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label1.Location = new System.Drawing.Point(193, 438);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(178, 20);
+			this.label1.Size = new System.Drawing.Size(120, 13);
 			this.label1.TabIndex = 42;
 			this.label1.Text = "¿Ya tienes una cuenta?";
 			// 
@@ -196,10 +187,9 @@
 			this.btnregresar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.btnregresar.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnregresar.ForeColor = System.Drawing.Color.White;
-			this.btnregresar.Location = new System.Drawing.Point(170, 712);
-			this.btnregresar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnregresar.Location = new System.Drawing.Point(113, 463);
 			this.btnregresar.Name = "btnregresar";
-			this.btnregresar.Size = new System.Drawing.Size(430, 66);
+			this.btnregresar.Size = new System.Drawing.Size(287, 43);
 			this.btnregresar.TabIndex = 40;
 			this.btnregresar.Text = "REGRESAR";
 			this.btnregresar.UseVisualStyleBackColor = false;
@@ -215,10 +205,9 @@
 			this.btnregistrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.btnregistrar.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnregistrar.ForeColor = System.Drawing.Color.White;
-			this.btnregistrar.Location = new System.Drawing.Point(170, 603);
-			this.btnregistrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnregistrar.Location = new System.Drawing.Point(113, 392);
 			this.btnregistrar.Name = "btnregistrar";
-			this.btnregistrar.Size = new System.Drawing.Size(428, 66);
+			this.btnregistrar.Size = new System.Drawing.Size(285, 43);
 			this.btnregistrar.TabIndex = 39;
 			this.btnregistrar.Text = "REGISTRARSE";
 			this.btnregistrar.UseVisualStyleBackColor = false;
@@ -228,20 +217,18 @@
 			// 
 			this.label3.AutoSize = true;
 			this.label3.ForeColor = System.Drawing.Color.Black;
-			this.label3.Location = new System.Drawing.Point(165, 182);
-			this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label3.Location = new System.Drawing.Point(110, 118);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(432, 20);
+			this.label3.Size = new System.Drawing.Size(289, 13);
 			this.label3.TabIndex = 45;
 			this.label3.Text = "_______________________________________________";
 			// 
 			// pictureBox1
 			// 
 			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(184, 43);
-			this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.pictureBox1.Location = new System.Drawing.Point(123, 28);
 			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(72, 62);
+			this.pictureBox1.Size = new System.Drawing.Size(48, 40);
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox1.TabIndex = 51;
 			this.pictureBox1.TabStop = false;
@@ -249,13 +236,13 @@
 			// menuStrip1
 			// 
 			this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
-			this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
 			this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tipoDeUsuarioToolStripMenuItem});
-			this.menuStrip1.Location = new System.Drawing.Point(276, 537);
+			this.menuStrip1.Location = new System.Drawing.Point(184, 349);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(192, 35);
+			this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+			this.menuStrip1.Size = new System.Drawing.Size(137, 24);
 			this.menuStrip1.TabIndex = 52;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -268,44 +255,45 @@
 			this.tipoDeUsuarioToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.tipoDeUsuarioToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
 			this.tipoDeUsuarioToolStripMenuItem.Name = "tipoDeUsuarioToolStripMenuItem";
-			this.tipoDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(181, 29);
+			this.tipoDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
 			this.tipoDeUsuarioToolStripMenuItem.Text = "Tipo de Usuario";
 			// 
 			// profesionalToolStripMenuItem
 			// 
 			this.profesionalToolStripMenuItem.Name = "profesionalToolStripMenuItem";
-			this.profesionalToolStripMenuItem.Size = new System.Drawing.Size(269, 34);
+			this.profesionalToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
 			this.profesionalToolStripMenuItem.Text = "Profesional";
 			// 
 			// personaNaturalToolStripMenuItem
 			// 
 			this.personaNaturalToolStripMenuItem.Name = "personaNaturalToolStripMenuItem";
-			this.personaNaturalToolStripMenuItem.Size = new System.Drawing.Size(269, 34);
+			this.personaNaturalToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
 			this.personaNaturalToolStripMenuItem.Text = "Persona Natural";
 			// 
 			// panel1
 			// 
 			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(71)))));
+			this.panel1.Controls.Add(this.button1);
 			this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panel1.Location = new System.Drawing.Point(0, 0);
+			this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(760, 40);
+			this.panel1.Size = new System.Drawing.Size(505, 26);
 			this.panel1.TabIndex = 53;
 			// 
 			// register
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoScroll = true;
 			this.AutoSize = true;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-			this.ClientSize = new System.Drawing.Size(760, 824);
+			this.ClientSize = new System.Drawing.Size(505, 555);
 			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.txtrpass2);
 			this.Controls.Add(this.txtrpass);
 			this.Controls.Add(this.txtruser);
 			this.Controls.Add(this.txtcorreo);
-			this.Controls.Add(this.button1);
 			this.Controls.Add(this.label6);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.label4);
@@ -317,12 +305,14 @@
 			this.Controls.Add(this.menuStrip1);
 			this.Controls.Add(this.panel1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.Name = "register";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "register";
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
+			this.panel1.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

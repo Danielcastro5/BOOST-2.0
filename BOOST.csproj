@@ -105,6 +105,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="editaruser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editaruser.Designer.cs">
+      <DependentUpon>editaruser.cs</DependentUpon>
+    </Compile>
     <Compile Include="educativo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +180,9 @@
     <None Include="Resources\boostlogo.png" />
     <None Include="Resources\cruz.png" />
     <None Include="Resources\imglogin.jpg" />
+    <EmbeddedResource Include="editaruser.resx">
+      <DependentUpon>editaruser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="educativo.resx">
       <DependentUpon>educativo.cs</DependentUpon>
     </EmbeddedResource>

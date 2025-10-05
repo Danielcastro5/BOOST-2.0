@@ -77,6 +77,7 @@ namespace BOOST
 
 		private void btneditar_Click(object sender, EventArgs e)
 		{
+			openChildForm(new editaruser());
 			hideSubMenu();
 		}
 
