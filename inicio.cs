@@ -18,19 +18,19 @@ namespace BOOST
 			InitializeComponent();
 			customizeDesing();
 		}
-		private void customizeDesing()
+		public void customizeDesing()
 		{
 			panelsubmenu.Visible = false;
 			panelusersubmenu.Visible = false;
 		}
-		private void hideSubMenu()
+		public void hideSubMenu()
 		{
 			if (panelsubmenu.Visible == true)
 				panelsubmenu.Visible = false;
 			if (panelusersubmenu.Visible == true)
 				panelusersubmenu.Visible = false;
 		}
-		private void showSubMenu(Panel subMenu) 
+		public void showSubMenu(Panel subMenu) 
 		{
 			if (subMenu.Visible == false)
 			{
@@ -88,8 +88,8 @@ namespace BOOST
 
 			this.Hide();
 		}
-		private Form activeForm = null;
-		private void openChildForm(Form childForm)
+		public Form activeForm = null;
+		public void openChildForm(Form childForm)
 		{
 			if(activeForm != null)
 				activeForm.Close();

@@ -16,5 +16,61 @@ namespace BOOST
 		{
 			InitializeComponent();
 		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			inicio formInicio = Application.OpenForms["inicio"] as inicio;
+
+			if (formInicio != null)
+			{
+				formInicio.openChildForm(new user1lab());
+			}
+			else
+			{
+				MessageBox.Show("No se encontró el formulario principal.");
+			}
+		}
+
+		private void button2_Click(object sender, EventArgs e)
+		{
+			inicio formInicio = Application.OpenForms["inicio"] as inicio;
+
+			if (formInicio != null)
+			{
+				formInicio.openChildForm(new user2lab());
+			}
+			else
+			{
+				MessageBox.Show("No se encontró el formulario principal.");
+			}
+		}
+
+		private void button3_Click(object sender, EventArgs e)
+		{
+			inicio formInicio = Application.OpenForms["inicio"] as inicio;
+
+			if (formInicio != null)
+			{
+				formInicio.openChildForm(new user3lab());
+			}
+			else
+			{
+				MessageBox.Show("No se encontró el formulario principal.");
+			}
+		}
+
+		private void button4_Click(object sender, EventArgs e)
+		{
+			inicio formInicio = Application.OpenForms["inicio"] as inicio;
+
+			if (formInicio != null)
+			{
+				formInicio.openChildForm(new user4lab());
+			}
+			else
+			{
+				MessageBox.Show("No se encontró el formulario principal.");
+			}
+		}
 	}
 }

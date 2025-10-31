@@ -42,6 +42,7 @@ namespace BOOST
 			{
 				txtecorreo.Text = "";
 				txtecorreo.ForeColor = Color.Black;
+				txtecorreo.RightToLeft = RightToLeft.No;
 			}
 		}
 
@@ -60,6 +61,7 @@ namespace BOOST
 			{
 				txtapass.Text = "";
 				txtapass.ForeColor = Color.Black;
+				txtapass.UseSystemPasswordChar = true;
 			}
 		}
 
@@ -69,6 +71,7 @@ namespace BOOST
 			{
 				txtapass.Text = "CONTRASEÑA ACTUAL";
 				txtapass.ForeColor = Color.Black;
+				txtapass.UseSystemPasswordChar = false;
 			}
 		}
 
@@ -78,6 +81,7 @@ namespace BOOST
 			{
 				txtepass.Text = "";
 				txtepass.ForeColor = Color.Black;
+				txtepass.UseSystemPasswordChar = true;
 			}
 		}
 
@@ -87,6 +91,7 @@ namespace BOOST
 			{
 				txtepass.Text = "NUEVA CONTRASEÑA";
 				txtepass.ForeColor = Color.Black;
+				txtepass.UseSystemPasswordChar = false;
 			}
 		}
 

@@ -62,9 +62,8 @@
 			this.panel2.Controls.Add(this.panellogo);
 			this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
 			this.panel2.Location = new System.Drawing.Point(0, 0);
-			this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(283, 456);
+			this.panel2.Size = new System.Drawing.Size(424, 702);
 			this.panel2.TabIndex = 3;
 			// 
 			// btncerrar
@@ -79,9 +78,10 @@
 			this.btncerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
 			this.btncerrar.IconSize = 30;
 			this.btncerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btncerrar.Location = new System.Drawing.Point(0, 475);
+			this.btncerrar.Location = new System.Drawing.Point(0, 731);
+			this.btncerrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.btncerrar.Name = "btncerrar";
-			this.btncerrar.Size = new System.Drawing.Size(266, 50);
+			this.btncerrar.Size = new System.Drawing.Size(398, 77);
 			this.btncerrar.TabIndex = 7;
 			this.btncerrar.Text = "Cerrar Sesión";
 			this.btncerrar.UseVisualStyleBackColor = false;
@@ -92,9 +92,10 @@
 			this.panelusersubmenu.BackColor = System.Drawing.Color.Blue;
 			this.panelusersubmenu.Controls.Add(this.btneditar);
 			this.panelusersubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panelusersubmenu.Location = new System.Drawing.Point(0, 423);
+			this.panelusersubmenu.Location = new System.Drawing.Point(0, 651);
+			this.panelusersubmenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.panelusersubmenu.Name = "panelusersubmenu";
-			this.panelusersubmenu.Size = new System.Drawing.Size(266, 52);
+			this.panelusersubmenu.Size = new System.Drawing.Size(398, 80);
 			this.panelusersubmenu.TabIndex = 6;
 			// 
 			// btneditar
@@ -109,8 +110,9 @@
 			this.btneditar.IconSize = 30;
 			this.btneditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btneditar.Location = new System.Drawing.Point(0, 0);
+			this.btneditar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.btneditar.Name = "btneditar";
-			this.btneditar.Size = new System.Drawing.Size(283, 50);
+			this.btneditar.Size = new System.Drawing.Size(424, 77);
 			this.btneditar.TabIndex = 4;
 			this.btneditar.Text = "Editar Datos";
 			this.btneditar.UseVisualStyleBackColor = false;
@@ -128,9 +130,10 @@
 			this.btnuser.IconFont = FontAwesome.Sharp.IconFont.Auto;
 			this.btnuser.IconSize = 30;
 			this.btnuser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnuser.Location = new System.Drawing.Point(0, 373);
+			this.btnuser.Location = new System.Drawing.Point(0, 574);
+			this.btnuser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.btnuser.Name = "btnuser";
-			this.btnuser.Size = new System.Drawing.Size(266, 50);
+			this.btnuser.Size = new System.Drawing.Size(398, 77);
 			this.btnuser.TabIndex = 5;
 			this.btnuser.Text = "Perfil";
 			this.btnuser.UseVisualStyleBackColor = false;
@@ -144,9 +147,10 @@
 			this.panelsubmenu.Controls.Add(this.btnfinanzas);
 			this.panelsubmenu.Controls.Add(this.btnpsicologia);
 			this.panelsubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panelsubmenu.Location = new System.Drawing.Point(0, 170);
+			this.panelsubmenu.Location = new System.Drawing.Point(0, 262);
+			this.panelsubmenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.panelsubmenu.Name = "panelsubmenu";
-			this.panelsubmenu.Size = new System.Drawing.Size(266, 203);
+			this.panelsubmenu.Size = new System.Drawing.Size(398, 312);
 			this.panelsubmenu.TabIndex = 4;
 			// 
 			// btnlaboral
@@ -161,9 +165,10 @@
 			this.btnlaboral.IconFont = FontAwesome.Sharp.IconFont.Auto;
 			this.btnlaboral.IconSize = 30;
 			this.btnlaboral.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnlaboral.Location = new System.Drawing.Point(0, 150);
+			this.btnlaboral.Location = new System.Drawing.Point(0, 231);
+			this.btnlaboral.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.btnlaboral.Name = "btnlaboral";
-			this.btnlaboral.Size = new System.Drawing.Size(266, 50);
+			this.btnlaboral.Size = new System.Drawing.Size(398, 77);
 			this.btnlaboral.TabIndex = 6;
 			this.btnlaboral.Text = "Tutorías Laborales";
 			this.btnlaboral.UseVisualStyleBackColor = false;
@@ -182,9 +187,10 @@
 			this.btneducativo.IconFont = FontAwesome.Sharp.IconFont.Auto;
 			this.btneducativo.IconSize = 30;
 			this.btneducativo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btneducativo.Location = new System.Drawing.Point(0, 100);
+			this.btneducativo.Location = new System.Drawing.Point(0, 154);
+			this.btneducativo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.btneducativo.Name = "btneducativo";
-			this.btneducativo.Size = new System.Drawing.Size(266, 50);
+			this.btneducativo.Size = new System.Drawing.Size(398, 77);
 			this.btneducativo.TabIndex = 5;
 			this.btneducativo.Text = "Tutorías Educativas";
 			this.btneducativo.UseVisualStyleBackColor = false;
@@ -204,9 +210,10 @@
 			this.btnfinanzas.IconFont = FontAwesome.Sharp.IconFont.Auto;
 			this.btnfinanzas.IconSize = 30;
 			this.btnfinanzas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnfinanzas.Location = new System.Drawing.Point(0, 50);
+			this.btnfinanzas.Location = new System.Drawing.Point(0, 77);
+			this.btnfinanzas.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.btnfinanzas.Name = "btnfinanzas";
-			this.btnfinanzas.Size = new System.Drawing.Size(266, 50);
+			this.btnfinanzas.Size = new System.Drawing.Size(398, 77);
 			this.btnfinanzas.TabIndex = 4;
 			this.btnfinanzas.Text = "Asesoria de Finanzas";
 			this.btnfinanzas.UseVisualStyleBackColor = false;
@@ -225,8 +232,9 @@
 			this.btnpsicologia.IconSize = 30;
 			this.btnpsicologia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btnpsicologia.Location = new System.Drawing.Point(0, 0);
+			this.btnpsicologia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.btnpsicologia.Name = "btnpsicologia";
-			this.btnpsicologia.Size = new System.Drawing.Size(266, 50);
+			this.btnpsicologia.Size = new System.Drawing.Size(398, 77);
 			this.btnpsicologia.TabIndex = 3;
 			this.btnpsicologia.Text = "Psicología  y Terapias";
 			this.btnpsicologia.UseVisualStyleBackColor = false;
@@ -244,9 +252,10 @@
 			this.btnservicios.IconFont = FontAwesome.Sharp.IconFont.Auto;
 			this.btnservicios.IconSize = 30;
 			this.btnservicios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnservicios.Location = new System.Drawing.Point(0, 120);
+			this.btnservicios.Location = new System.Drawing.Point(0, 185);
+			this.btnservicios.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.btnservicios.Name = "btnservicios";
-			this.btnservicios.Size = new System.Drawing.Size(266, 50);
+			this.btnservicios.Size = new System.Drawing.Size(398, 77);
 			this.btnservicios.TabIndex = 2;
 			this.btnservicios.Text = "Servicios";
 			this.btnservicios.UseVisualStyleBackColor = false;
@@ -257,8 +266,9 @@
 			this.panellogo.Controls.Add(this.pictureBox2);
 			this.panellogo.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panellogo.Location = new System.Drawing.Point(0, 0);
+			this.panellogo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.panellogo.Name = "panellogo";
-			this.panellogo.Size = new System.Drawing.Size(266, 120);
+			this.panellogo.Size = new System.Drawing.Size(398, 185);
 			this.panellogo.TabIndex = 1;
 			// 
 			// pictureBox2
@@ -268,9 +278,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-			this.pictureBox2.Location = new System.Drawing.Point(49, 12);
+			this.pictureBox2.Location = new System.Drawing.Point(77, 38);
+			this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(176, 87);
+			this.pictureBox2.Size = new System.Drawing.Size(240, 110);
 			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.pictureBox2.TabIndex = 0;
 			this.pictureBox2.TabStop = false;
@@ -281,23 +292,23 @@
 			this.panelChildForm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelChildForm.BackgroundImage")));
 			this.panelChildForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.panelChildForm.Location = new System.Drawing.Point(283, 0);
+			this.panelChildForm.Location = new System.Drawing.Point(424, 0);
+			this.panelChildForm.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.panelChildForm.Name = "panelChildForm";
-			this.panelChildForm.Size = new System.Drawing.Size(573, 456);
+			this.panelChildForm.Size = new System.Drawing.Size(860, 702);
 			this.panelChildForm.TabIndex = 4;
 			// 
 			// inicio
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoScroll = true;
 			this.AutoSize = true;
 			this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-			this.ClientSize = new System.Drawing.Size(856, 456);
+			this.ClientSize = new System.Drawing.Size(1284, 702);
 			this.Controls.Add(this.panelChildForm);
 			this.Controls.Add(this.panel2);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.Name = "inicio";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "BOOST";

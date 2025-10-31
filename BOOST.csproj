@@ -172,11 +172,155 @@
     <Compile Include="register.Designer.cs">
       <DependentUpon>register.cs</DependentUpon>
     </Compile>
+    <Compile Include="user1edu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user1edu.Designer.cs">
+      <DependentUpon>user1edu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user1fin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user1fin.Designer.cs">
+      <DependentUpon>user1fin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user1lab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user1lab.Designer.cs">
+      <DependentUpon>user1lab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user1psic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user1psic.Designer.cs">
+      <DependentUpon>user1psic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user2edu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user2edu.Designer.cs">
+      <DependentUpon>user2edu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user2fin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user2fin.Designer.cs">
+      <DependentUpon>user2fin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user2lab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user2lab.Designer.cs">
+      <DependentUpon>user2lab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user2psic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user2psic.Designer.cs">
+      <DependentUpon>user2psic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user3edu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user3edu.Designer.cs">
+      <DependentUpon>user3edu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user3fin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user3fin.Designer.cs">
+      <DependentUpon>user3fin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user3lab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user3lab.Designer.cs">
+      <DependentUpon>user3lab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user3psic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user3psic.Designer.cs">
+      <DependentUpon>user3psic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user4edu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user4edu.Designer.cs">
+      <DependentUpon>user4edu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user4fin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user4fin.Designer.cs">
+      <DependentUpon>user4fin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user4lab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user4lab.Designer.cs">
+      <DependentUpon>user4lab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user4psic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user4psic.Designer.cs">
+      <DependentUpon>user4psic.cs</DependentUpon>
+    </Compile>
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
+    <EmbeddedResource Include="user1edu.resx">
+      <DependentUpon>user1edu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user1fin.resx">
+      <DependentUpon>user1fin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user1lab.resx">
+      <DependentUpon>user1lab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user1psic.resx">
+      <DependentUpon>user1psic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user2edu.resx">
+      <DependentUpon>user2edu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user2fin.resx">
+      <DependentUpon>user2fin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user2lab.resx">
+      <DependentUpon>user2lab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user2psic.resx">
+      <DependentUpon>user2psic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user3edu.resx">
+      <DependentUpon>user3edu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user3fin.resx">
+      <DependentUpon>user3fin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user3lab.resx">
+      <DependentUpon>user3lab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user3psic.resx">
+      <DependentUpon>user3psic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user4edu.resx">
+      <DependentUpon>user4edu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user4fin.resx">
+      <DependentUpon>user4fin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user4lab.resx">
+      <DependentUpon>user4lab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user4psic.resx">
+      <DependentUpon>user4psic.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Resources\boostlogo.png" />
     <None Include="Resources\cruz.png" />
     <None Include="Resources\imglogin.jpg" />
