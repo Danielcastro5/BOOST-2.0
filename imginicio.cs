@@ -16,5 +16,10 @@ namespace BOOST
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void imginicio_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

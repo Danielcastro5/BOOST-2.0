@@ -116,7 +116,7 @@ namespace BOOST
 				return;
 			}
 
-			MySqlConnection con = new MySqlConnection("server = 127.0.0.1; Database=logins; User Id = root; password=");
+			MySqlConnection con = new MySqlConnection("server = 127.0.0.1; Database=logins; User Id = root; password=tarrao");
 			try
 			{
 				con.Open();
@@ -181,6 +181,9 @@ namespace BOOST
 			Form1.Show();
 		}
 
-		
-	}
+        private void txtruser_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
