@@ -117,12 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Creo profundamente en el poder de la palabra, la escucha y el vínculo terapéutico. Me apasiona ayudar a las personas a entenderse mejor, a liberarse de la culpa y a reconectar con su propósito. Soy curiosa, paciente y comprometida con cada historia que acompaño. Cuando no estoy en consulta, disfruto caminar al aire libre, leer sobre neurociencia y compartir tiempo con mi familia. Para mí, la salud mental no es un lujo: es una necesidad que merece respeto, cuidado y acción.</value>
-  </data>
-  <data name="txtDescripcion.Text" xml:space="preserve">
-    <value>Soy psicóloga clínica con más de diez años de experiencia en el acompañamiento emocional de adolescentes y adultos. Me especializo en el tratamiento de la ansiedad y en terapia cognitivo-conductual, una herramienta que permite transformar pensamientos limitantes en acciones saludables. Mi enfoque es claro, estructurado y empático: trabajo para que cada persona recupere su equilibrio, fortalezca su autoestima y construya herramientas duraderas para su bienestar.</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBoxFoto.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

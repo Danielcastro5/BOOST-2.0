@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -101,6 +102,9 @@ namespace BOOST
 			string correo = txtecorreo.Text.Trim();
 			string currentPassword = txtapass.Text;
 			string newPassword = txtepass.Text;
+			string descripcion = txtDescripcion.Text;
+			byte[] fotoBytes = File.Exists(rutaImagen) ? File.ReadAllBytes(rutaImagen) : null;
+
 
 			if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(correo) ||
 				string.IsNullOrWhiteSpace(currentPassword) || string.IsNullOrWhiteSpace(newPassword))
@@ -115,7 +119,7 @@ namespace BOOST
 				return;
 			}
 
-			MySqlConnection con = new MySqlConnection("server=127.0.0.1;Database=logins;User Id=root;password=tarrao");
+			MySqlConnection con = new MySqlConnection("server=127.0.0.1;Database=logins;User Id=root;password=basquet123");
 			try
 			{
 				con.Open();
@@ -138,11 +142,15 @@ namespace BOOST
 					return;
 				}
 
-				string updateQuery = "UPDATE users SET correo = @correo, pass = @newpass WHERE user = @username";
+				string updateQuery = "UPDATE users SET correo = @correo, pass = @newpass, descripcion = @descripcion, foto = @foto WHERE user = @username";
 				MySqlCommand updateCmd = new MySqlCommand(updateQuery, con);
 				updateCmd.Parameters.AddWithValue("@correo", correo);
 				updateCmd.Parameters.AddWithValue("@newpass", newPassword);
+				updateCmd.Parameters.AddWithValue("@descripcion", descripcion);
+				updateCmd.Parameters.AddWithValue("@foto", fotoBytes);
 				updateCmd.Parameters.AddWithValue("@username", username);
+				updateCmd.ExecuteNonQuery();
+
 
 				int rowsAffected = updateCmd.ExecuteNonQuery();
 				if (rowsAffected > 0)
@@ -182,5 +190,38 @@ namespace BOOST
         {
 
         }
-    }
+
+		private void txtDescripcion_Enter(object sender, EventArgs e)
+		{
+			if (txtDescripcion.Text == "Descripción de perfil profecional")
+			{
+				txtDescripcion.Text = "";
+				txtDescripcion.ForeColor = Color.Black;
+			}
+		}
+
+		private void txtDescripcion_Leave(object sender, EventArgs e)
+		{
+			if (txtDescripcion.Text == "")
+			{
+				txtDescripcion.Text = "Descripción de perfil profecional";
+				txtDescripcion.ForeColor = Color.Black;
+			}
+		}
+		private string rutaImagen = "";
+		private void btnSeleccionarFoto_Click(object sender, EventArgs e)
+		{
+
+			OpenFileDialog dialog = new OpenFileDialog();
+			dialog.Filter = "Imágenes|*.jpg;*.png;*.bmp";
+
+			if (dialog.ShowDialog() == DialogResult.OK)
+			{
+				rutaImagen = dialog.FileName;
+				pictureBoxFoto.Image = Image.FromFile(rutaImagen);
+			}
+		}
+
+	}
+	
 }

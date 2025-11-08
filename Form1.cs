@@ -74,7 +74,7 @@ namespace BOOST
 		{
 			string username = txtuser.Text;
 			string pass = txtpass.Text;
-			MySqlConnection con = new MySqlConnection("server = 127.0.0.1; Database=logins; User Id = root; password=tarrao");
+			MySqlConnection con = new MySqlConnection("server = 127.0.0.1; Database=logins; User Id = root; password=basquet123");
 			try
 			{
 				con.Open();

@@ -1,6 +1,9 @@
-﻿using System;
+﻿using AxWMPLib;
+using MySql.Data.MySqlClient;
+using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.IO;
 using System.Windows.Forms;
 
 namespace BOOST
@@ -10,58 +13,94 @@ namespace BOOST
 		public user1psic()
 		{
 			InitializeComponent();
-            this.Paint += new PaintEventHandler(Form1_Paint);
-        }
-
-        // 🔹 1️⃣ Evento que pinta el fondo con degradado azul y plata
-        private void Form1_Paint(object sender, PaintEventArgs e)
-        {
-            using (LinearGradientBrush brush =
-                new LinearGradientBrush(
-                    this.ClientRectangle,
-                    Color.FromArgb(0, 70, 160),  // Azul elegante
-                    Color.Silver,                // Plateado brillante
-                    90F))                        // Vertical (90 grados)
-            {
-                e.Graphics.FillRectangle(brush, this.ClientRectangle);
-            }
-        }
-
-        private void ptblaura_Click(object sender, EventArgs e)
-        {
-     
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
 
         }
 
-        private void user1psic_Load(object sender, EventArgs e)
-        {
-            // este evento es para poner la imagen circular
-            System.Drawing.Drawing2D.GraphicsPath gp = new System.Drawing.Drawing2D.GraphicsPath();
-            gp.AddEllipse(0, 0, ptblaura.Width - 3, ptblaura.Height - 3);
-            ptblaura.Region = new Region(gp);
-        }
+		private void user1psic_Load(object sender, EventArgs e)
+		{
+		
+		}
 
-        private void ptblaura_Paint(object sender, PaintEventArgs e)
-        {
-            // Borde plateado
-            System.Drawing.Pen pen = new System.Drawing.Pen(Color.Silver, 4);
+		private void ValidarDisponibilidad()
+		{
+			DateTime fecha = calendarCitas.SelectionStart.Date;
+			DateTime hora = dateTimeHora.Value;
+			DateTime fechaCompleta = new DateTime(
+				fecha.Year, fecha.Month, fecha.Day,
+				hora.Hour, hora.Minute, 0
+			);
 
-            // Suaviza los bordes
-            e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+			using (MySqlConnection con = new MySqlConnection("server=127.0.0.1;Database=logins;User Id=root;password=basquet123"))
+			{
+				con.Open();
+				string query = "SELECT COUNT(*) FROM citas WHERE fecha = @fecha";
+				MySqlCommand cmd = new MySqlCommand(query, con);
+				cmd.Parameters.AddWithValue("@fecha", fechaCompleta);
+				int count = Convert.ToInt32(cmd.ExecuteScalar());
 
-            // Dibuja el borde circular
-            e.Graphics.DrawEllipse(pen, 2, 2, ptblaura.Width - 6, ptblaura.Height - 6);
+				if (count > 0)
+				{
+					lblEstadoFecha.Text = "No disponible";
+					btnContinuar.Enabled = false;
+				}
+				else
+				{
+					lblEstadoFecha.Text = "Disponible";
+					btnContinuar.Enabled = true;
+				}
+			}
+		}
 
-            pen.Dispose();
-        }
+		private void calendarCitas_DateChanged(object sender, DateRangeEventArgs e)
+		{
+			dateTimeHora.Format = DateTimePickerFormat.Time;
+			dateTimeHora.ShowUpDown = true;
+			ValidarDisponibilidad();
+		}
 
-        private void label2_Click(object sender, EventArgs e)
-        {
+		private void btnContinuar_Click(object sender, EventArgs e)
+		{
+			DateTime fecha = calendarCitas.SelectionStart.Date;
+			DateTime hora = dateTimeHora.Value;
+			DateTime fechaCompleta = new DateTime(
+				fecha.Year, fecha.Month, fecha.Day,
+				hora.Hour, hora.Minute, 0
+			);
 
-        }
-    }
+			MySqlConnection con = new MySqlConnection("server=127.0.0.1;Database=logins;User Id=root;password=basquet123");
+			con.Open();
+			string query = "SELECT COUNT(*) FROM citas WHERE fecha = @fecha";
+			MySqlCommand cmd = new MySqlCommand(query, con);
+			cmd.Parameters.AddWithValue("@fecha", fechaCompleta);
+			int count = Convert.ToInt32(cmd.ExecuteScalar());
+			con.Close();
+
+			if (count > 0)
+			{
+				MessageBox.Show("Esa fecha y hora ya están ocupadas.");
+			}
+			else
+			{
+				Formpago pago = new Formpago(fechaCompleta);
+				pago.ShowDialog();
+			}
+		}
+
+
+
+		private void lblEstadoFecha_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void dateTimeHora_ValueChanged(object sender, EventArgs e)
+		{
+			dateTimeHora.Format = DateTimePickerFormat.Time;
+			dateTimeHora.ShowUpDown = true;
+			ValidarDisponibilidad();
+
+		}
+
+	
+	}
 }
